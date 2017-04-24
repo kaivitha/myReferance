@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html >
+<html ng-app="Myapp">
+<head>
+<meta charset="utf-8" />
+<title>Business Website Template</title>
+   
+ <link href="css/tooplate_style.css" rel="stylesheet" />
+</head>
+<body> 
+
+<div id="tooplate_header_wrapper">
+
+    <div id="tooplate_header">
+    
+        <div id="site_title">
+        
+        	<h1><a href="#"><img src="images/tooplate_logo.png" alt="business template" /><span>Free HTML Template</span></a></h1>
+        
+        </div> <!-- end of site_title -->
+        
+        <div id="header_phone_no">
+
+			Toll Free: <span>08 324 552 409</span>
+        
+        </div>
+        
+        <div class="cleaner_h10"></div>
+        
+        <div id="tooplate_menu">
+        	
+            <div id="home_menu"><a href="#"></a></div>
+                
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>    	
+        
+        </div> <!-- end of tooplate_menu -->
+        
+    </div>	  
+</div> <!-- end of header_wrapper -->
+
+
+
+<div id="tooplate_main">
+    
+    <div id="tooplate_content" ng-controller="myCtrl">
+    
+        <h3>{{message}}</h1>
+        <div>Name : <input type="text" ng-model="name" placeholder="Enter name here"></div>
+        <h2>Hello {{name}}</h2>
+        <ng-view></ng-view>    
+    </div>
+    
+        <div id="tooplate_sidebar">
+        
+            <h2>Our Services</h2>
+            
+            <ul class="tooplate_list">
+            <li><a href="#">Praesent turpis erat</a></li>
+            <li><a href="#">Curabitur ullamcorper</a></li>
+            <li><a href="#">Pellentesque adipiscing</a></li>
+            <li><a href="#">Cras rutrum ullamcorper</a></li>
+            <li><a href="#">Mattis vel tempor eu</a></li>
+            <li><a href="#">Praesent diam mauris</a></li>
+            <li><a href="#">Vivamus risus massa</a></li>
+            <li><a href="#">Sodales nec bibendum eu</a></li>
+            <li><a href="#">Mauris sapien magna</a></li>
+            <li><a href="#">Etiam sit amet est arcu</a></li>
+            </ul>
+            
+        </div>
+        
+		<div class="cleaner"></div>
+</div>
+
+    <div class="cleaner"></div>  
+
+<div id="tooplate_footer_wrapper">
+
+     <div id="tooplate_footer">
+    
+        Copyright © 2048 <a href="#">Company Name</a> - Design: <a href="#">tooplate</a>
+    
+    </div> <!-- end of tooplate_footer -->
+
+</div> 
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/main.js"></script> 
+    <script src="js/route.js"></script> 
+</body>
+</html>
